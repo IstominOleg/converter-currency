@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="shortcut icon" href="/images/2650314.svg" type="image/svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="mask">
+        <div class="loader">Loading</div>
+    </div>
+
+    <div class="wrapper">
+        <header class="menu">
+            <img class="img-logo" src="/images/Asset 1@3x 1.jpg" alt="logo">
+            <ul class="list">
+                <li><a href="#">БАНК</a></li>
+                <li><a href="#">БИЗНЕС</a></li>
+                <li><a href="#">ИНВЕСТИЦИИ</a></li>
+                <li><a href="#">СТРАХОВАНИЕ</a></li>
+                <li><a href="#">МОБАЙЛ</a></li>
+                <li><a href="#">ПУТЕШЕСТВИЯ</a></li>
+                <li><a href="#">РАЗВЛЕЧЕНИЯ</a></li>
+            </ul>
+            <button class="enterBtn">ВОЙТИ</button>
+        </header>
+
+        <main>
+            <h1>Конвертер валют онлайн</h1>
+            <section class="conversion">
+                <div class="convert-block">
+                    <h3 class="text">У меня есть</h3>
+                    <div class="currenciesAll currenciesAllLeft"> 
+                        <div class="currency leftCurrency fixedLeft activ start">RUB</div>
+                        <div class="currency leftCurrency fixedLeft">USD</div>
+                        <div class="currency leftCurrency fixedLeft">EUR</div>
+                        <div class="currency leftCurrency fixedLeft">GBP</div>
+                        <select class="currency leftCurrency leftCurrencySelect end">
+                            <option value="HKD">HKD</option><option value="IDR">IDR</option><option value="ILS">ILS</option>
+                            <option value="DKK">DKK</option><option value="INR">INR</option><option value="CHF">CHF</option>
+                            <option value="MXN">MXN</option><option value="CZK">CZK</option><option value="SGD">SGD</option>
+                            <option value="THB">THB</option><option value="HRK">HRK</option><option value="MYR">MYR</option>
+                            <option value="NOK">NOK</option><option value="CNY">CNY</option><option value="BGN">BGN</option>
+                            <option value="PHP">PHP</option><option value="SEK">SEK</option><option value="PLN">PLN</option>
+                            <option value="ZAR">ZAR</option><option value="CAD">CAD</option><option value="ISK">ISK</option>
+                            <option value="BRL">BRL</option><option value="RON">RON</option><option value="NZD">NZD</option>
+                            <option value="TRY">TRY</option><option value="JPY">JPY</option><option value="KRW">KRW</option>
+                            <option value="HUF">HUF</option><option value="AUD">AUD</option>
+                        </select>
+                    </div>
+
+                    <div class="currency-field">
+                        <input class="user-currency input-left" onkeyup="validate()" type="text" value="1">
+                        <p class="rate rate-input"></p> 
+                    </div>
+                </div>
+            
+
+                <div class="convert-sign">
+                    <img id="revers" src="/images/Group 5.jpg" alt="revers">
+                </div>
+
+                <div class="convert-block">
+                    <h3 class="text">Хочу приобрести</h3>
+                    <div class="currenciesAll currenciesAllRight"> 
+                        <div class="currency rightCurrency fixedRight start">RUB</div>
+                        <div class="currency rightCurrency fixedRight activ">USD</div>
+                        <div class="currency rightCurrency fixedRight">EUR</div>
+                        <div class="currency rightCurrency fixedRight">GBP</div>
+                        <select class="currency rightCurrency rightCurrencySelect end">
+                            <option value="HKD">HKD</option><option value="IDR">IDR</option><option value="ILS">ILS</option>
+                            <option value="DKK">DKK</option><option value="INR">INR</option><option value="CHF">CHF</option>
+                            <option value="MXN">MXN</option><option value="CZK">CZK</option><option value="SGD">SGD</option>
+                            <option value="THB">THB</option><option value="HRK">HRK</option><option value="MYR">MYR</option>
+                            <option value="NOK">NOK</option><option value="CNY">CNY</option><option value="BGN">BGN</option>
+                            <option value="PHP">PHP</option><option value="SEK">SEK</option><option value="PLN">PLN</option>
+                            <option value="ZAR">ZAR</option><option value="CAD">CAD</option><option value="ISK">ISK</option>
+                            <option value="BRL">BRL</option><option value="RON">RON</option><option value="NZD">NZD</option>
+                            <option value="TRY">TRY</option><option value="JPY">JPY</option><option value="KRW">KRW</option>
+                            <option value="HUF">HUF</option><option value="AUD">AUD</option>
+                        </select>
+                    </div>
+
+                    <div class="currency-field">
+                        <input class="user-currency input-right" onkeyup="validate2()" type="text">
+                        <p class="rate rate-output"></p> 
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
